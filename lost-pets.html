@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Pets - Lost & Found Pets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-paw"></i>
+                    <span>Lost & Found Pets</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lost-pets.html" class="active">Lost Pets</a></li>
+                    <li><a href="found-pets.html">Found Pets</a></li>
+                    <li><a href="add-lost-pet.html">Add Lost Pet</a></li>
+                    <li><a href="add-found-pet.html">Add Found Pet</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Lost Pets</h1>
+        <p>Help reunite these lost pets with their families</p>
+    </div>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="pets-grid" id="petsGrid">
+                <!-- Pet cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Pets - Find Your Furry Friend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-paw"></i>
+                    <span>Lost & Found Pets</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="lost-pets.html">Lost Pets</a></li>
+                    <li><a href="found-pets.html">Found Pets</a></li>
+                    <li><a href="add-lost-pet.html">Add Lost Pet</a></li>
+                    <li><a href="add-found-pet.html">Add Found Pet</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Furry Friend</h1>
+            <p>Help Reunite Lost Pets with Their Families</p>
+            <div class="hero-buttons">
+                <a href="add-lost-pet.html" class="btn btn-primary">Report Lost Pet</a>
+                <a href="add-found-pet.html" class="btn btn-secondary">Report Found Pet</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-dog"></i>
+            <i class="fas fa-cat"></i>
+        </div>
+    </section>
+
+    <!-- Lost Pets Section -->
+    <section class="pets-section">
+        <div class="container">
+            <h2 class="section-title">Recently Reported Lost Pets</h2>
+            <div class="pets-grid" id="lostPetsGrid">
+                <!-- Pet cards will be dynamically loaded here -->
+            </div>
+            <div class="view-all">
+                <a href="lost-pets.html" class="btn btn-outline">View All Lost Pets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Found Pets Section -->
+    <section class="pets-section pets-section-alt">
+        <div class="container">
+            <h2 class="section-title">Recently Found Pets</h2>
+            <div class="pets-grid" id="foundPetsGrid">
+                <!-- Pet cards will be dynamically loaded here -->
+            </div>
+            <div class="view-all">
+                <a href="found-pets.html" class="btn btn-outline">View All Found Pets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <p class="testimonial-text">"Thanks to this platform, I found my beloved Golden Retriever Max after 3 days. The community support was incredible!"</p>
+                    <p class="testimonial-author">- Sarah Johnson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <p class="testimonial-text">"I found a lost cat in my neighborhood and posted it here. Within hours, the owner contacted me. This site really works!"</p>
+                    <p class="testimonial-author">- Michael Chen</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <p class="testimonial-text">"The easy-to-use interface made it simple to report my missing pet. Luna is back home safe and sound!"</p>
+                    <p class="testimonial-author">- Emily Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>Our mission is to help reunite lost pets with their families through a community-driven platform. We believe that every pet deserves to be back home with their loved ones. By providing an easy-to-use platform for reporting lost and found pets, we connect pet owners with caring community members who can help bring them together.</p>
+                <p>Whether you've lost a pet or found one, our platform makes it simple to share information and connect with others in your area. Together, we can make a difference in the lives of pets and their families.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lost & Found Pets</h3>
+                    <p>Helping reunite pets with their families since 2024.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@lostfoundpets.com</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lost & Found Pets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

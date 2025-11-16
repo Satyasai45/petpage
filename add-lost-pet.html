@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Pet - Lost & Found Pets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-paw"></i>
+                    <span>Lost & Found Pets</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lost-pets.html">Lost Pets</a></li>
+                    <li><a href="found-pets.html">Found Pets</a></li>
+                    <li><a href="add-lost-pet.html" class="active">Add Lost Pet</a></li>
+                    <li><a href="add-found-pet.html">Add Found Pet</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Report Lost Pet</h1>
+        <p>Help us find your missing pet by providing the details below</p>
+    </div>
+
+    <div class="form-container">
+        <form id="lostPetForm">
+            <div class="form-group">
+                <label for="petName">Pet Name <span class="required">*</span></label>
+                <input type="text" id="petName" name="petName" placeholder="Enter your pet's name" required>
+                <span class="error-message">Please enter your pet's name</span>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="petType">Pet Type <span class="required">*</span></label>
+                    <select id="petType" name="petType" required>
+                        <option value="">Select Pet Type</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error-message">Please select a pet type</span>
+                </div>
+
+                <div class="form-group" id="breedGroup" style="display: none;">
+                    <label for="breed">Breed <span class="required">*</span></label>
+                    <select id="breed" name="breed">
+                        <option value="">Select Breed</option>
+                    </select>
+                    <span class="error-message">Please select a breed</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="color">Color <span class="required">*</span></label>
+                    <select id="color" name="color" required>
+                        <option value="">Select Color</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Golden">Golden</option>
+                        <option value="Gray">Gray</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error-message">Please select a color</span>
+                </div>
+
+                <div class="form-group" id="customColorGroup" style="display: none;">
+                    <label for="customColor">Custom Color <span class="required">*</span></label>
+                    <input type="text" id="customColor" name="customColor" placeholder="Enter custom color">
+                    <span class="error-message">Please enter a custom color</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="size">Size <span class="required">*</span></label>
+                    <select id="size" name="size" required>
+                        <option value="">Select Size</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error-message">Please select a size</span>
+                </div>
+
+                <div class="form-group" id="customSizeGroup" style="display: none;">
+                    <label for="customSize">Custom Size Description <span class="required">*</span></label>
+                    <input type="text" id="customSize" name="customSize" placeholder="Enter size description">
+                    <span class="error-message">Please enter a size description</span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateLost">Date Lost <span class="required">*</span></label>
+                    <input type="date" id="dateLost" name="dateLost" required>
+                    <span class="error-message">Please select the date lost</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="lostLocation">Lost Location <span class="required">*</span></label>
+                <input type="text" id="lostLocation" name="lostLocation" placeholder="Enter the location where your pet was lost" required>
+                <span class="error-message">Please enter the lost location</span>
+            </div>
+
+            <div class="form-group">
+                <label for="petIdentifier">Tag or Microchip ID (Optional)</label>
+                <input type="number" id="petIdentifier" name="petIdentifier" placeholder="Enter tag or microchip ID">
+            </div>
+
+            <div class="form-group">
+                <label for="contactNumber">Contact Number <span class="required">*</span></label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter 10-digit phone number" pattern="[0-9]{10}" maxlength="10" required>
+                <span class="error-message">Please enter a valid 10-digit phone number</span>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description <span class="required">*</span></label>
+                <textarea id="description" name="description" placeholder="Provide additional details about your pet (distinctive features, behavior, etc.)" required></textarea>
+                <span class="error-message">Please enter a description</span>
+            </div>
+
+            <div class="form-group">
+                <label>Pet Image</label>
+                <div class="file-upload">
+                    <input type="file" id="petImage" name="petImage" accept="image/*">
+                    <label for="petImage" class="file-upload-label">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Click to upload or drag and drop</span>
+                    </label>
+                    <div class="file-name" id="fileName"></div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit Report</button>
+                <a href="index.html" class="btn btn-outline">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="form-handler.js"></script>
+</body>
+</html>
+
